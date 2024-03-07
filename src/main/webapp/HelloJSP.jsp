@@ -13,7 +13,10 @@ String param = request.getParameter("msg");
 </head>
 <body>
 	<h2>처음 만들어보는 <%=str1 %></h2>
-	<p><% out.println(str2 + str1 + "입니다. 열공해용^^"); %>
-	<h3>파라미터: <%=param %></h3>
+	<p><% out.println(str2 + str1 + "입니다. 열공해욤^^*"); %></p>
+	<h3>파라미터 : <%=param %></h3>
 </body>
 </html>
+
+
+

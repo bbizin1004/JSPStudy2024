@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>LifeCycle.jsp</title>
 </head>
 <body>
     <script>
@@ -34,6 +34,6 @@
         	onclick="requestAction(this.form, 2);" />
     </form>
 </body>
-
-
 </html>
+
+

@@ -3,7 +3,7 @@
     pageEncoding="UTF-8"%>
 <!--  
 JSTL 사용을 위한 taglib 지시어에서 uri속성은 이와같이 Tomcat9.x에서
-사용하던 키워드도 사용할 수 있다.
+사용하던 키워드도 사용할 수 있다. 
 -->    
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>       
@@ -12,7 +12,6 @@ JSTL 사용을 위한 taglib 지시어에서 uri속성은 이와같이 Tomcat9.x
 <body>
 	<!-- Date클래스를 통해 날짜를 설정한다.  -->
     <c:set var="today" value="<%= new java.util.Date() %>" />
-    
     <!--  
     날짜만 출력할때 사용한다. type="date"
     dateStyle속성에 따라 아래와 같이 표현된다. 
@@ -76,6 +75,9 @@ JSTL 사용을 위한 taglib 지시어에서 uri속성은 이와같이 Tomcat9.x
     <c:forEach var="ids" items="<%=java.util.TimeZone.getAvailableIDs() %>">
     	${ids } <br>
     </c:forEach>
+    
 </body>
 </html>
+
+
 

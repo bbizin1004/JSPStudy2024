@@ -23,4 +23,3 @@ String lastTimeStr = dateFormat.format(new Date(lastTime));
     </ul>
 </body>
 </html>
-

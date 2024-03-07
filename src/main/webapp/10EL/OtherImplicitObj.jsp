@@ -32,9 +32,12 @@ CookieManager.makeCookie(response, "ELCookie", "EL좋아요", 10);
     <h3>컨텍스트 초기화 매개변수 읽기</h3>
     <li>OracleDriver : ${ initParam.OracleDriver }</li>
 	
-    <!-- 이클립스 환경에서는 "프로젝트명/" 과 같이 출력된다.  -->
+	<!-- 이클립스 환경에서는 "프로젝트명/" 과 같이 출력된다.  -->
     <h3>컨텍스트 루트 경로 읽기</h3>
     <li>${ pageContext.request.contextPath }</li>
 </body>
 </html>
+
+
+
 

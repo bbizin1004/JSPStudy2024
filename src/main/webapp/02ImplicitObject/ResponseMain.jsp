@@ -11,15 +11,16 @@
     <%
     /*
     get방식으로 전달된 loginErr 파라미터가 있는 경우에만 "로그인실패"를
-    출력한다. 첫 실행시에는 파라미터가 없는 상태이므로 메세지는 출력되지 않는다.
+    출력한다. 첫 실행시에는 파라미터가 없는 상태이므로 메세지는 출력되지 
+   	않는다. 
     */
     String loginErr = request.getParameter("loginErr");
     if (loginErr != null) out.print("로그인 실패");
     %>
     <!-- 로그인을 위해 post방식으로 폼값을 전송한다. get방식으로 전송하면
-    로그인 정보가 쿼리스트링을 통해 주소줄에 표시되므로, 정보유출의 위험이 있다.
-    따라서 로그인과 같이 보안이 필요한 경우에는 post 방식을 사용해서 값을 전송해야한다.
-    -->
+    로그인 정보가 쿼리스트링을 통해 주소줄에 표시되므로, 정보유출의 위험이
+    있다. 따라서 로그인과 같이 보안이 필요한 경우에는 post방식을 사용해서
+    값을 전송해야한다.  -->
     <form action="./ResponseLogin.jsp" method="post">
         아이디 : <input type="text" name="user_id" /><br />
         패스워드 : <input type="text" name="user_pwd" /><br />
@@ -34,6 +35,7 @@
         <input type="submit" value="응답 헤더 설정 & 출력" />
     </form>
 </body>
-
-
 </html>
+
+
+

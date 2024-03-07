@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%> 
 <table border="1" width="90%"> 
     <tr>
         <td align="center">
@@ -14,7 +14,6 @@
             <a href="../08Board/List.jsp">게시판(페이징X)</a>
             &nbsp;&nbsp;&nbsp; 
             <a href="../09PagingBoard/List.jsp">게시판(페이징O)</a>
-        </td>
+        </td> 
     </tr>
 </table>
- 
