@@ -6,13 +6,13 @@ public class Person {
 	private int age;
 	//디폴트(기본) 생성자
 	public Person() {}
-	//인수(인자) 생성자
+	//인수(인자) 생성자 
 	public Person(String name, int age) {
 		super();
 		this.name = name;
 		this.age = age;
 	}
-	//getter/setter 메서드
+	//getter/setter 메서드 
 	public String getName() {
 		return name;
 	}
@@ -25,5 +25,4 @@ public class Person {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	
 }

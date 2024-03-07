@@ -10,22 +10,24 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/mvcboard/download.do")
-public class DownloadController extends HttpServlet {
-	
+public class DownloadController extends HttpServlet{
 	private static final long serialVersionUID = 1L;
+	
+	//다운로드 링크를 클릭하므로 get방식의 요청 처리 
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+        throws ServletException, IOException {
+    	//파라미터 받기 
+        String ofile = req.getParameter("ofile");   
+        String sfile = req.getParameter("sfile");  
+        String idx = req.getParameter("idx");    
 
-	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-			throws ServletException, IOException {
-		
-		String ofile = req.getParameter("ofile");
-		String sfile = req.getParameter("sfile");
-		String idx = req.getParameter("idx");
-		
-		FileUtil.download(req, resp, "/Uploads", sfile, ofile);
-		
-		MVCBoardDAO dao = new MVCBoardDAO();
-		dao.downCountPlus(idx);
-		dao.Close();
-	}
+        //파일을 다운로드 한다. 
+        FileUtil.download(req, resp, "/Uploads", sfile, ofile);
+
+        //다운로드 횟수를 증가시킨다. 
+        MVCBoardDAO dao = new MVCBoardDAO();
+        dao.downCountPlus(idx);
+        dao.close();
+    }
 }

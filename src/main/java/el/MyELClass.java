@@ -21,7 +21,7 @@ public class MyELClass {
             returnStr = "주민번호 오류입니다.";
         return returnStr;
     }
-    
+   
     //매개변수로 전달된 단 만큼의 구구단을 table형태로 반환한다. 
     public static String showGugudan(int limitDan) {
     	/* 문자열의 변경이 많은 경우 StringBuffer클래스를 사용하는것이
@@ -47,3 +47,7 @@ public class MyELClass {
         return sb.toString();
     }
 }
+
+
+
+
