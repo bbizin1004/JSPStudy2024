@@ -35,7 +35,8 @@ function validateForm(form) {  // 필수 항목 입력 확인
 <h2>파일 첨부형 게시판 - 글쓰기(Write)</h2>
 <!--  
 글쓰기 페이지는 파일첨부를 위해 method는 post, enctype은 multipart로 
-설정한다. 
+설정한다.  enctype은 데이터의 인코딩 방법을 지정한다.  multipart는 파일이나
+이미지를 업로드 할때 사용하는 방식이다.
 전송할때의 경로(요청명)가 쓰기 페이지로 진입할때와 동일하지만, 컨트롤러에서는 
 get방식과 post방식에 따라 각각 처리할 수 있다. 
 -->
