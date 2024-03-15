@@ -37,11 +37,11 @@
 	action="../mvcboard/edit.do" onsubmit="return validateForm(this);">
 
 <!-- 수정할 게시물의 일련번호 -->
-<input type="hid-den" name="idx" value="${ dto.idx }"/>
+<input type="hidden" name="idx" value="${ dto.idx }"/>
 <!-- 기존에 등록된 파일명으로 만약 수정페이지에서 첨부파일을 변경하지
 않는다면 여기에 등록된 파일명을로 update 처리한다. -->
-<input type="hid-den" name="prevOfile" value="${ dto.ofile }" />
-<input type="hid-den" name="prevSfile" value="${ dto.sfile }" />
+<input type="hidden" name="prevOfile" value="${ dto.ofile }" />
+<input type="hidden" name="prevSfile" value="${ dto.sfile }" />
     
 <table border="1" width="90%">
     <tr>

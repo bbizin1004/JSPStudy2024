@@ -31,7 +31,7 @@ public class JSFunction {
         }
         catch (Exception e) {}
     }
-	//기능 : 경고창을 띄우고 위로 한페이지 이동한다. 
+	//기능 : 경고창을 띄우고 뒤로 한페이지 이동한다. 
     public static void alertBack(String msg, JspWriter out) {
         try {
             String script = "<script>"
